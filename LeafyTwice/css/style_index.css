@@ -1,0 +1,149 @@
+/* POPPINS FONT */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    ---bg-dark:#292929;
+    ---bg_light:#70997e;
+    ---txt-titulo-dark:#70997e;
+    ---txt-p-dark:#ffff;
+    ---txt-titulo-light:#164413;
+    ---txt-subtitulo-light:#025625;
+    ---txt-subtitulo-dark:;
+    ---txt-p-light:#ffff;
+    ---txt-a-light: rgb(255 255 255 / 70%);
+    ---txt-a-dark: #292929;
+    ---cards-clima-light:#487357;
+    ---cards-clima-dark:#70997e;
+    --scroll-bg-color: rgb(106 110 107);
+     --scroll-color: rgb(64 66 65);
+    --scroll-hov: rgb(78 78 78);
+    --sect-color: rgb(16, 120, 136);
+    --sect-sec-color: rgb(4, 169, 168);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    right: auto;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--scroll-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-hov);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scroll-bg-color);
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    width: 500px;
+    height: 420px;
+    border-radius: 8px;
+}
+
+.left {
+    max-width: 45%;
+    padding: 30px 64px;
+}
+
+.right {
+    padding: 40px 48px;
+}
+
+.title {
+    color: #70997e;
+    font-size: 2.9em;
+    width: 50%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
+}
+
+.msg {
+    color: #ffff;
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+button.cta {
+    border: none;
+    outline: none;
+    background-color: #344c3e;
+    color: #fff;
+    padding: 18px 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1),
+    0 15px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: opacity 0.9;
+}
+
+button.cta:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 650px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        font-size: 0.8em;
+    }
+
+    .left * {
+        width: 95%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    button.cta {
+        max-width: 60%;
+    }
+
+    .right img {
+        width: 90%;
+    }
+
+}
+
